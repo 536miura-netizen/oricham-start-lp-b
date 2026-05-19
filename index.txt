@@ -1,0 +1,567 @@
+1:"$Sreact.fragment"
+2:I[79520,["/_next/static/chunks/0mjs9rztbd-jy.js","/_next/static/chunks/0dbhjjzl8qfwv.js"],""]
+4:I[39756,["/_next/static/chunks/0mjs9rztbd-jy.js","/_next/static/chunks/0dbhjjzl8qfwv.js"],"default"]
+5:I[37457,["/_next/static/chunks/0mjs9rztbd-jy.js","/_next/static/chunks/0dbhjjzl8qfwv.js"],"default"]
+a:I[68027,["/_next/static/chunks/0mjs9rztbd-jy.js","/_next/static/chunks/0dbhjjzl8qfwv.js"],"default",1]
+:HL["/_next/static/chunks/0a95me5o7fyad.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@600;700&family=Shippori+Mincho+B1:wght@600;700&display=swap","style"]
+3:T71c,
+          (function () {
+            var utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+
+            function appendCurrentUtm(anchor) {
+              var href = anchor.getAttribute('href');
+              if (!href || href.charAt(0) === '#') return;
+
+              try {
+                var url = new URL(href, window.location.href);
+                var currentParams = new URLSearchParams(window.location.search);
+                var changed = false;
+
+                utmKeys.forEach(function (key) {
+                  var value = currentParams.get(key);
+                  if (value && !url.searchParams.has(key)) {
+                    url.searchParams.set(key, value);
+                    changed = true;
+                  }
+                });
+
+                if (changed) anchor.setAttribute('href', url.toString());
+              } catch (error) {
+                // Ignore malformed URLs so links never break because of tracking.
+              }
+            }
+
+            document.querySelectorAll('a[href]').forEach(appendCurrentUtm);
+
+            document.addEventListener('click', function (event) {
+              var target = event.target.closest('[data-track-event]');
+              if (!target) return;
+
+              var eventName = target.getAttribute('data-track-event');
+              var eventLabel = target.getAttribute('data-track-label') || target.textContent.trim();
+
+              if (window.gtag && eventName) {
+                window.gtag('event', eventName, {
+                  event_category: 'cta',
+                  event_label: eventLabel
+                });
+              }
+
+              if (window.clarity && eventName) {
+                window.clarity('event', eventName + ':' + eventLabel);
+              }
+            });
+          })();
+        0:{"P":null,"c":["",""],"q":"","i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0a95me5o7fyad.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0mjs9rztbd-jy.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0dbhjjzl8qfwv.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"ja","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@600;700&family=Shippori+Mincho+B1:wght@600;700&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[[null,null,["$","$L2",null,{"id":"cta-tracking-and-utm","strategy":"afterInteractive","children":"$3"}]],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{},null,false,null]},null,false,null],"$L9",false]],"m":"$undefined","G":["$a",["$Lb"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"qiFpa_MP7rBBb_GPlARLw"}
+19:I[97367,["/_next/static/chunks/0mjs9rztbd-jy.js","/_next/static/chunks/0dbhjjzl8qfwv.js"],"ViewportBoundary"]
+1b:I[97367,["/_next/static/chunks/0mjs9rztbd-jy.js","/_next/static/chunks/0dbhjjzl8qfwv.js"],"MetadataBoundary"]
+1c:"$Sreact.suspense"
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+c:T41a8,
+        * { box-sizing: border-box; }
+        .hero-section {
+          background-image: url('/assets/hero-background-soft-green.png');
+          background-size: cover;
+          background-position: center top;
+        }
+        .bottle-scene::before {
+          content: '';
+          position: absolute;
+          left: 12%;
+          right: 8%;
+          bottom: 33px;
+          height: 48px;
+          border-radius: 999px;
+          background: rgba(31, 93, 52, 0.11);
+          filter: blur(16px);
+        }
+        .bottle-photo {
+          -webkit-mask-image:
+            linear-gradient(to right, transparent 0%, rgba(0,0,0,0.2) 8%, #000 24%, #000 100%),
+            linear-gradient(to bottom, #000 0%, #000 88%, transparent 100%);
+          -webkit-mask-composite: source-in;
+          mask-image:
+            linear-gradient(to right, transparent 0%, rgba(0,0,0,0.2) 8%, #000 24%, #000 100%),
+            linear-gradient(to bottom, #000 0%, #000 88%, transparent 100%);
+          mask-composite: intersect;
+          filter: drop-shadow(0 22px 18px rgba(24, 56, 38, 0.1));
+        }
+        .bottle {
+          position: absolute;
+          bottom: 54px;
+          width: 145px;
+          height: 505px;
+          filter: drop-shadow(0 24px 24px rgba(24, 56, 38, 0.16));
+          transform-origin: bottom center;
+          animation: floatBottle 7s ease-in-out infinite;
+        }
+        .bottle-white { left: clamp(22px, 12vw, 118px); z-index: 2; }
+        .bottle-green { left: clamp(150px, 27vw, 268px); z-index: 3; animation-delay: -1.6s; }
+        .bottle-cap,
+        .bottle-neck,
+        .bottle-body {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          overflow: hidden;
+        }
+        .bottle-cap {
+          top: 0;
+          width: 55px;
+          height: 84px;
+          border-radius: 18px 18px 12px 12px;
+          border: 1px solid rgba(201, 220, 197, 0.72);
+          background: linear-gradient(90deg, rgba(255,255,255,0.72), rgba(238,246,234,0.7), rgba(255,255,255,0.28));
+        }
+        .bottle-green .bottle-cap {
+          border-color: rgba(183, 201, 172, 0.55);
+          background: linear-gradient(90deg, #173d25, #1f5d34 45%, #0e2919);
+        }
+        .bottle-cap::after {
+          content: '';
+          position: absolute;
+          inset: 9px 16px;
+          border-left: 1px solid rgba(184, 161, 90, 0.65);
+          border-right: 1px solid rgba(184, 161, 90, 0.35);
+        }
+        .bottle-neck {
+          top: 70px;
+          width: 58px;
+          height: 145px;
+          border-left: 1px solid rgba(201, 220, 197, 0.62);
+          border-right: 1px solid rgba(201, 220, 197, 0.62);
+          background: linear-gradient(90deg, rgba(255,255,255,0.5), rgba(251,252,247,0.82) 48%, rgba(230,238,225,0.58));
+        }
+        .bottle-green .bottle-neck {
+          border-color: rgba(201, 220, 197, 0.28);
+          background: linear-gradient(90deg, #173d25, #1f5d34 42%, #081d12);
+        }
+        .bottle-neck span {
+          position: absolute;
+          left: 50%;
+          top: 28px;
+          transform: translateX(-50%) rotate(90deg);
+          color: #1F5D34;
+          font-size: 10px;
+          font-weight: 700;
+          white-space: nowrap;
+        }
+        .bottle-green .bottle-neck span { color: #B8A15A; }
+        .bottle-crest {
+          position: absolute;
+          left: 50%;
+          top: 196px;
+          z-index: 4;
+          width: 38px;
+          height: 38px;
+          transform: translateX(-50%);
+          border: 2px solid #B8A15A;
+          border-radius: 50%;
+          background: radial-gradient(circle, #FBFCF7 0 45%, rgba(184,161,90,0.45) 47% 58%, rgba(255,255,255,0.86) 60%);
+          box-shadow: 0 4px 12px rgba(24, 56, 38, 0.12);
+        }
+        .bottle-body {
+          top: 202px;
+          width: 138px;
+          height: 304px;
+          border: 1px solid rgba(201, 220, 197, 0.82);
+          border-radius: 66px 66px 23px 23px / 80px 80px 23px 23px;
+          background:
+            linear-gradient(98deg, rgba(255,255,255,0.86) 0 18%, rgba(255,255,255,0.34) 19% 23%, rgba(238,246,234,0.52) 24% 66%, rgba(255,255,255,0.34) 68% 72%, rgba(214,230,207,0.56));
+        }
+        .bottle-green .bottle-body {
+          border-color: rgba(201, 220, 197, 0.28);
+          background:
+            linear-gradient(96deg, rgba(255,255,255,0.18) 0 13%, rgba(31,93,52,0.92) 14% 35%, #0d2d1a 38% 75%, rgba(255,255,255,0.16) 76% 80%, #07180f 82%);
+        }
+        .bottle-body::before {
+          content: '';
+          position: absolute;
+          inset: 24px 18px auto;
+          height: 134px;
+          border-radius: 50%;
+          border: 1px solid rgba(31, 93, 52, 0.19);
+          opacity: 0.7;
+        }
+        .bottle-label {
+          position: absolute;
+          left: 50%;
+          bottom: 42px;
+          width: 100px;
+          min-height: 118px;
+          transform: translateX(-50%);
+          border: 1px solid rgba(184, 161, 90, 0.8);
+          border-radius: 44px 44px 18px 18px;
+          background: rgba(251,252,247,0.92);
+          color: #1F5D34;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 18px 10px 12px;
+          box-shadow: inset 0 0 0 4px rgba(238,246,234,0.9);
+        }
+        .label-leaf {
+          width: 58px;
+          height: 18px;
+          margin-bottom: 5px;
+          border-top: 1px solid rgba(31, 93, 52, 0.38);
+          border-radius: 50%;
+        }
+        .bottle-label strong {
+          font-family: Georgia, serif;
+          font-size: 18px;
+          line-height: 1.1;
+          font-weight: 500;
+        }
+        .bottle-label em {
+          margin-top: 2px;
+          font-family: Georgia, serif;
+          font-size: 16px;
+          line-height: 1.2;
+        }
+        .bottle-label small {
+          margin-top: 7px;
+          color: #183826;
+          font-size: 10px;
+          font-weight: 700;
+        }
+        @keyframes floatBottle {
+          0%, 100% { transform: translateY(0) rotate(-0.7deg); }
+          50% { transform: translateY(-7px) rotate(0.4deg); }
+        }
+        .visual-card {
+          position: relative;
+          height: 100px;
+          overflow: hidden;
+          isolation: isolate;
+          background: #EEF6EA;
+        }
+        .visual-card::before,
+        .visual-card::after {
+          content: '';
+          position: absolute;
+          pointer-events: none;
+        }
+        .visual-card::after {
+          inset: 0;
+          z-index: 8;
+          background:
+            linear-gradient(180deg, rgba(251,252,247,0.02), rgba(251,252,247,0.36)),
+            radial-gradient(circle at 76% 16%, rgba(255,255,255,0.42), transparent 34%);
+        }
+        .scene-glow,
+        .scene-line,
+        .scene-figure,
+        .scene-detail {
+          position: absolute;
+          display: block;
+          pointer-events: none;
+        }
+        .scene-glow {
+          inset: 0;
+          z-index: 7;
+          background:
+            linear-gradient(180deg, rgba(251,252,247,0.02), rgba(251,252,247,0.34)),
+            radial-gradient(circle at 78% 16%, rgba(255,255,255,0.36), transparent 34%);
+        }
+        .scene-bar {
+          background:
+            linear-gradient(180deg, rgba(24,56,38,0.9) 0%, rgba(31,93,52,0.82) 48%, rgba(238,246,234,0.96) 100%),
+            linear-gradient(110deg, #183826, #EEF6EA 86%);
+        }
+        .scene-bar::before {
+          left: 18px;
+          top: 16px;
+          width: 8px;
+          height: 8px;
+          border-radius: 999px;
+          background: rgba(184,161,90,0.72);
+          box-shadow:
+            30px -2px 0 rgba(184,161,90,0.62),
+            62px 3px 0 rgba(184,161,90,0.45),
+            92px -1px 0 rgba(251,252,247,0.36);
+          filter: blur(0.2px);
+        }
+        .scene-bar::after {
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 46px;
+          z-index: 4;
+          background:
+            linear-gradient(180deg, rgba(251,252,247,0.14), rgba(251,252,247,0.84)),
+            linear-gradient(90deg, rgba(184,161,90,0.22), rgba(201,220,197,0.38));
+        }
+        .scene-bar .scene-line-one { left: 16px; right: 16px; bottom: 30px; z-index: 5; height: 1px; background: rgba(184,161,90,0.62); }
+        .scene-bar .scene-line-two { left: 24px; right: 22px; bottom: 18px; z-index: 5; height: 1px; background: rgba(31,93,52,0.2); }
+        .scene-bar .scene-figure-one,
+        .scene-bar .scene-figure-two {
+          bottom: 28px;
+          z-index: 6;
+          width: 16px;
+          height: 24px;
+          border: 1px solid rgba(251,252,247,0.78);
+          border-top: 0;
+          border-radius: 0 0 9px 9px;
+        }
+        .scene-bar .scene-figure-one { left: 48px; }
+        .scene-bar .scene-figure-two { left: 78px; height: 27px; }
+        .scene-bar .scene-detail-one,
+        .scene-bar .scene-detail-two {
+          bottom: 20px;
+          z-index: 6;
+          width: 1px;
+          height: 12px;
+          background: rgba(251,252,247,0.72);
+        }
+        .scene-bar .scene-detail-one { left: 56px; }
+        .scene-bar .scene-detail-two { left: 86px; }
+        .scene-event {
+          background:
+            radial-gradient(circle at 48% 10%, rgba(184,161,90,0.42), transparent 23%),
+            linear-gradient(180deg, rgba(24,56,38,0.82), rgba(31,93,52,0.66) 46%, rgba(251,252,247,0.92) 100%);
+        }
+        .scene-event::before {
+          left: 50%;
+          top: 9px;
+          width: 58px;
+          height: 24px;
+          transform: translateX(-50%);
+          border-top: 1px solid rgba(184,161,90,0.8);
+          border-radius: 50%;
+          box-shadow:
+            0 8px 18px rgba(184,161,90,0.28),
+            -34px 8px 0 -10px rgba(184,161,90,0.45),
+            34px 8px 0 -10px rgba(184,161,90,0.45);
+        }
+        .scene-event::after {
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 4;
+          height: 38px;
+          background: linear-gradient(180deg, rgba(251,252,247,0.22), rgba(251,252,247,0.88));
+        }
+        .scene-event .scene-line-one { left: 22px; right: 22px; bottom: 26px; z-index: 5; height: 1px; background: rgba(184,161,90,0.56); }
+        .scene-event .scene-figure-one,
+        .scene-event .scene-figure-two {
+          bottom: 25px;
+          z-index: 6;
+          width: 18px;
+          height: 30px;
+          border: 1px solid rgba(251,252,247,0.86);
+          border-radius: 10px 10px 4px 4px;
+        }
+        .scene-event .scene-figure-one { left: 52px; transform: rotate(-4deg); }
+        .scene-event .scene-figure-two { left: 78px; transform: rotate(5deg); }
+        .scene-event .scene-detail-one,
+        .scene-event .scene-detail-two {
+          bottom: 15px;
+          z-index: 6;
+          width: 1px;
+          height: 13px;
+          background: rgba(251,252,247,0.74);
+        }
+        .scene-event .scene-detail-one { left: 61px; }
+        .scene-event .scene-detail-two { left: 87px; }
+        .scene-brand {
+          background:
+            radial-gradient(circle at 74% 20%, rgba(31,93,52,0.16), transparent 28%),
+            linear-gradient(135deg, #FBFCF7 0%, #EEF6EA 100%);
+        }
+        .scene-brand::before {
+          left: 22px;
+          bottom: 18px;
+          z-index: 3;
+          width: 36px;
+          height: 52px;
+          border: 1px solid rgba(201,220,197,0.96);
+          border-radius: 5px;
+          background: rgba(251,252,247,0.82);
+          box-shadow: 0 12px 18px rgba(24,56,38,0.08);
+        }
+        .scene-brand::after {
+          left: 16px;
+          right: 16px;
+          bottom: 14px;
+          z-index: 2;
+          height: 1px;
+          background: rgba(31,93,52,0.15);
+          box-shadow: 0 16px 18px rgba(31,93,52,0.08);
+        }
+        .scene-brand .scene-figure-one {
+          left: 68px;
+          bottom: 15px;
+          z-index: 4;
+          width: 24px;
+          height: 70px;
+          border: 1px solid rgba(31,93,52,0.5);
+          border-radius: 12px 12px 5px 5px;
+          background: linear-gradient(90deg, rgba(251,252,247,0.84), rgba(238,246,234,0.72));
+        }
+        .scene-brand .scene-figure-one::before {
+          content: '';
+          position: absolute;
+          left: 50%;
+          top: -14px;
+          width: 10px;
+          height: 18px;
+          transform: translateX(-50%);
+          border: 1px solid rgba(31,93,52,0.38);
+          border-bottom: 0;
+          border-radius: 4px 4px 0 0;
+          background: rgba(251,252,247,0.8);
+        }
+        .scene-brand .scene-figure-two {
+          left: 102px;
+          bottom: 18px;
+          z-index: 4;
+          width: 18px;
+          height: 45px;
+          border-radius: 10px 10px 4px 4px;
+          background: linear-gradient(90deg, #1F5D34, #123722);
+        }
+        .scene-brand .scene-detail-one {
+          right: 28px;
+          bottom: 28px;
+          z-index: 4;
+          width: 42px;
+          height: 42px;
+          border-left: 1px solid rgba(31,93,52,0.38);
+          transform: rotate(-18deg);
+        }
+        .scene-brand .scene-detail-one::before,
+        .scene-brand .scene-detail-one::after {
+          content: '';
+          position: absolute;
+          width: 14px;
+          height: 8px;
+          border-radius: 999px 0 999px 0;
+          background: rgba(31,93,52,0.42);
+        }
+        .scene-brand .scene-detail-one::before { left: -2px; top: 8px; }
+        .scene-brand .scene-detail-one::after { left: 5px; top: 22px; transform: rotate(36deg); }
+        .scene-side {
+          background:
+            radial-gradient(circle at 78% 24%, rgba(31,93,52,0.12), transparent 24%),
+            linear-gradient(140deg, #FBFCF7 0%, #EEF6EA 100%);
+        }
+        .scene-side::before {
+          left: 20px;
+          right: 20px;
+          bottom: 20px;
+          z-index: 2;
+          height: 1px;
+          background: rgba(31,93,52,0.16);
+          box-shadow: 0 16px 20px rgba(31,93,52,0.08);
+        }
+        .scene-side::after {
+          right: 20px;
+          bottom: 30px;
+          z-index: 4;
+          width: 26px;
+          height: 18px;
+          border: 1px solid rgba(184,161,90,0.46);
+          border-radius: 0 0 12px 12px;
+          background: rgba(251,252,247,0.72);
+        }
+        .scene-side .scene-figure-one {
+          left: 32px;
+          bottom: 31px;
+          z-index: 4;
+          width: 68px;
+          height: 42px;
+          border: 2px solid rgba(31,93,52,0.56);
+          border-radius: 5px;
+          background: linear-gradient(135deg, rgba(251,252,247,0.8), rgba(238,246,234,0.72));
+        }
+        .scene-side .scene-figure-one::after {
+          content: '';
+          position: absolute;
+          left: 18px;
+          right: 18px;
+          bottom: -9px;
+          height: 3px;
+          border-radius: 999px;
+          background: rgba(31,93,52,0.35);
+        }
+        .scene-side .scene-figure-two {
+          right: 25px;
+          top: 20px;
+          z-index: 3;
+          width: 1px;
+          height: 42px;
+          background: rgba(31,93,52,0.28);
+          transform: rotate(12deg);
+        }
+        .scene-side .scene-figure-two::before,
+        .scene-side .scene-figure-two::after {
+          content: '';
+          position: absolute;
+          width: 12px;
+          height: 8px;
+          border-radius: 999px 0 999px 0;
+          background: rgba(31,93,52,0.34);
+        }
+        .scene-side .scene-figure-two::before { right: 1px; top: 7px; transform: rotate(-22deg); }
+        .scene-side .scene-figure-two::after { left: 2px; top: 21px; transform: rotate(34deg); }
+        .scene-side .scene-line-one { left: 30px; right: 24px; bottom: 23px; z-index: 5; height: 1px; background: rgba(184,161,90,0.28); }
+        @media (max-width: 767px) {
+          .bottle-scene { min-height: 318px; }
+          .bottle { height: 388px; width: 112px; bottom: 38px; }
+          .bottle-white { left: calc(50% - 122px); }
+          .bottle-green { left: calc(50% - 8px); }
+          .bottle-cap { width: 43px; height: 66px; }
+          .bottle-neck { top: 55px; width: 45px; height: 112px; }
+          .bottle-neck span { font-size: 8px; top: 20px; }
+          .bottle-crest { top: 150px; width: 30px; height: 30px; }
+          .bottle-body { top: 154px; width: 108px; height: 234px; border-radius: 52px 52px 18px 18px / 63px 63px 18px 18px; }
+          .bottle-label { width: 82px; min-height: 94px; bottom: 30px; padding: 14px 8px 10px; }
+          .bottle-label strong { font-size: 14px; }
+          .bottle-label em { font-size: 13px; }
+          .label-leaf { width: 46px; height: 13px; }
+          .visual-card { height: 100px; }
+        }
+      8:["$","$1","c",{"children":[["$","main",null,{"className":"mx-auto min-h-screen max-w-[864px] overflow-x-hidden bg-[#FBFCF7] pb-[86px] font-sans text-[#183826] sm:pb-[92px]","children":[["$","style",null,{"children":"$c"}],"$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16"]}],["$L17"],"$L18"]}]
+9:["$","$1","h",{"children":[null,["$","$L19",null,{"children":"$L1a"}],["$","div",null,{"hidden":true,"children":["$","$L1b",null,{"children":["$","$1c",null,{"name":"Next.Metadata","children":"$L1d"}]}]}],null]}]
+b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0a95me5o7fyad.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+1e:I[5014,["/_next/static/chunks/0mjs9rztbd-jy.js","/_next/static/chunks/0dbhjjzl8qfwv.js","/_next/static/chunks/0gei0d8pq-p_-.js"],"default"]
+2c:I[97367,["/_next/static/chunks/0mjs9rztbd-jy.js","/_next/static/chunks/0dbhjjzl8qfwv.js"],"OutletBoundary"]
+:HL["/assets/transparent-green-glow-overlay.png","image"]
+:HL["/assets/audience-c-01.png","image"]
+:HL["/assets/audience-c-02.png","image"]
+d:["$","section",null,{"className":"hero-section relative","children":[["$","img",null,{"src":"/assets/transparent-green-glow-overlay.png","alt":"","className":"pointer-events-none absolute right-0 top-0 h-[58%] w-[72%] object-cover opacity-70"}],["$","div",null,{"className":"relative mx-auto grid max-w-[790px] grid-cols-[minmax(0,62%)_minmax(0,38%)] gap-x-0 px-4 pb-4 pt-6 sm:px-9 md:grid-cols-[0.64fr_0.36fr] md:gap-4 md:px-0 md:pb-5 md:pt-9","children":[["$","div",null,{"className":"nav-text col-span-2 flex max-w-full flex-wrap gap-x-1 gap-y-1.5 border-b border-[#C9DCC5] pb-3 text-[10px] leading-[1.6] text-[#1F5D34] md:flex-nowrap md:gap-x-1 md:pb-4 md:text-[13px]","children":[["$","span","オリシャン",{"children":["オリシャン",["$","span",null,{"className":"mx-1.5 text-[#B8A15A]","children":"/"}]]}],["$","span","OEM",{"children":["OEM",["$","span",null,{"className":"mx-1.5 text-[#B8A15A]","children":"/"}]]}],["$","span","副業",{"children":["副業",["$","span",null,{"className":"mx-1.5 text-[#B8A15A]","children":"/"}]]}],["$","span","サイドビジネス",{"children":["サイドビジネス",["$","span",null,{"className":"mx-1.5 text-[#B8A15A]","children":"/"}]]}],["$","span","フリーランス",{"children":["フリーランス",["$","span",null,{"className":"mx-1.5 text-[#B8A15A]","children":"/"}]]}],["$","span","新規事業",{"children":["新規事業",false]}]]}],["$","div",null,{"className":"relative z-10 min-w-0 pt-5 md:pt-4","children":[["$","p",null,{"className":"button-text inline-flex rounded-[0px] bg-[#1F5D34] px-3 py-2 text-[12px] leading-[1.15] text-white shadow-[0_12px_26px_rgba(31,93,52,0.12)] sm:text-[16px] md:mt-4 md:px-7 md:py-3 md:text-[24px]","children":"在庫負担なし・専用設備不要"}],["$","div",null,{"className":"mt-3 flex flex-wrap gap-1.5 md:mt-4 md:gap-2","children":[["$","span","在庫負担なし",{"className":"button-text rounded-full border border-[#C9DCC5] bg-white/76 px-2.5 py-1 text-[9px] leading-none text-[#1F5D34] shadow-[0_8px_18px_rgba(24,56,38,0.05)] md:px-4 md:py-1.5 md:text-[13px]","children":"在庫負担なし"}],["$","span","専用設備不要",{"className":"button-text rounded-full border border-[#C9DCC5] bg-white/76 px-2.5 py-1 text-[9px] leading-none text-[#1F5D34] shadow-[0_8px_18px_rgba(24,56,38,0.05)] md:px-4 md:py-1.5 md:text-[13px]","children":"専用設備不要"}],["$","span","受注ベース",{"className":"button-text rounded-full border border-[#C9DCC5] bg-white/76 px-2.5 py-1 text-[9px] leading-none text-[#1F5D34] shadow-[0_8px_18px_rgba(24,56,38,0.05)] md:px-4 md:py-1.5 md:text-[13px]","children":"受注ベース"}]]}],["$","h1",null,{"className":"hero-title mt-5 text-[24px] leading-[1.16] text-[#1F5D34] [letter-spacing:0.01em] sm:text-[44px] md:mt-8 md:text-[60px] md:[letter-spacing:0.04em]","children":["在庫を抱えずに、",["$","br",null,{}],["$","span",null,{"className":"whitespace-nowrap","children":"オリシャン事業を"}],["$","br",null,{}],"かんたんスタート。"]}],["$","p",null,{"className":"body-text mt-4 max-w-[410px] text-[12px] leading-[1.85] text-[#183826] md:mt-8 md:text-[17px]","children":["制作・印刷・発送はすべて代行。",["$","br",null,{}],"専門知識がなくても、",["$","br",null,{}],"事業立ち上げを進められる仕組みです。"]}],["$","div",null,{"className":"mt-7 hidden max-w-[430px] flex-col gap-3 sm:flex sm:flex-row","children":[["$","a",null,{"href":"https://lin.ee/P4whNSS","target":"_blank","rel":"noopener noreferrer","data-track-event":"hero_cta_click","data-track-label":"line_consultation","className":"button-text inline-flex min-h-[50px] items-center justify-center gap-2.5 rounded-[10px] bg-[#1F5D34] px-5 text-[15px] leading-none text-white shadow-[0_14px_26px_rgba(31,93,52,0.22)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_16px_30px_rgba(31,93,52,0.26)]","children":[["$","$L1e",null,{"ref":"$undefined","iconNode":[["path",{"d":"M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719","key":"1sd12s"}]],"className":"lucide-message-circle h-5 w-5","strokeWidth":1.9}],"公式LINEで無料相談"]}],["$","a",null,{"href":"#steps","data-track-event":"hero_cta_click","data-track-label":"view_flow","className":"button-text inline-flex min-h-[50px] items-center justify-center gap-2.5 rounded-[10px] border border-[#C9DCC5] bg-white/78 px-5 text-[15px] leading-none text-[#1F5D34] shadow-[0_10px_22px_rgba(24,56,38,0.07)] transition duration-300 hover:-translate-y-0.5","children":["仕組みを見る","$L1f"]}]]}],"$L20"]}],"$L21"]}]]}]
+e:["$","section",null,{"className":"relative z-10 px-4 pb-3 sm:px-9 md:px-0","children":["$","div",null,{"className":"mx-auto grid max-w-[720px] grid-cols-4 gap-2 sm:gap-4 md:gap-5","children":[["$","div","在庫負担",{"className":"group relative min-w-0 overflow-hidden rounded-[12px] border border-[#C9DCC5]/85 bg-white/82 px-2 py-2.5 text-center shadow-[0_10px_24px_rgba(24,56,38,0.055)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(24,56,38,0.08)] sm:rounded-[16px] sm:px-4 sm:py-4 md:px-5 md:py-5","children":[["$","div",null,{"className":"mx-auto flex h-6 w-6 items-center justify-center rounded-[7px] border border-[#C9DCC5] bg-[#EEF6EA] text-[#1F5D34] sm:h-9 sm:w-9 sm:rounded-[10px]","children":["$","$L1e",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 22v-9","key":"x3hkom"}],["path",{"d":"M15.17 2.21a1.67 1.67 0 0 1 1.63 0L21 4.57a1.93 1.93 0 0 1 0 3.36L8.82 14.79a1.655 1.655 0 0 1-1.64 0L3 12.43a1.93 1.93 0 0 1 0-3.36z","key":"2ntwy6"}],["path",{"d":"M20 13v3.87a2.06 2.06 0 0 1-1.11 1.83l-6 3.08a1.93 1.93 0 0 1-1.78 0l-6-3.08A2.06 2.06 0 0 1 4 16.87V13","key":"1pmm1c"}],["path",{"d":"M21 12.43a1.93 1.93 0 0 0 0-3.36L8.83 2.2a1.64 1.64 0 0 0-1.63 0L3 4.57a1.93 1.93 0 0 0 0 3.36l12.18 6.86a1.636 1.636 0 0 0 1.63 0z","key":"12ttoo"}]],"className":"lucide-package-open h-3.5 w-3.5 sm:h-5 sm:w-5","strokeWidth":1.75}]}],["$","p",null,{"className":"button-text mt-1.5 text-[8.5px] leading-none text-[#183826]/82 sm:mt-2.5 sm:text-[12px] md:text-[13px]","children":"在庫負担"}],["$","p",null,{"className":"button-text mt-1 text-[17px] leading-none text-[#1F5D34] sm:mt-1.5 sm:text-[28px] md:text-[34px]","children":"なし"}],"$undefined"]}],["$","div","専用設備",{"className":"group relative min-w-0 overflow-hidden rounded-[12px] border border-[#C9DCC5]/85 bg-white/82 px-2 py-2.5 text-center shadow-[0_10px_24px_rgba(24,56,38,0.055)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(24,56,38,0.08)] sm:rounded-[16px] sm:px-4 sm:py-4 md:px-5 md:py-5","children":[["$","div",null,{"className":"mx-auto flex h-6 w-6 items-center justify-center rounded-[7px] border border-[#C9DCC5] bg-[#EEF6EA] text-[#1F5D34] sm:h-9 sm:w-9 sm:rounded-[10px]","children":["$","$L1e",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z","key":"oel41y"}],["path",{"d":"m9 12 2 2 4-4","key":"dzmm74"}]],"className":"lucide-shield-check h-3.5 w-3.5 sm:h-5 sm:w-5","strokeWidth":1.75}]}],["$","p",null,{"className":"button-text mt-1.5 text-[8.5px] leading-none text-[#183826]/82 sm:mt-2.5 sm:text-[12px] md:text-[13px]","children":"専用設備"}],["$","p",null,{"className":"button-text mt-1 text-[17px] leading-none text-[#1F5D34] sm:mt-1.5 sm:text-[28px] md:text-[34px]","children":"不要"}],"$undefined"]}],["$","div","制作発送",{"className":"group relative min-w-0 overflow-hidden rounded-[12px] border border-[#C9DCC5]/85 bg-white/82 px-2 py-2.5 text-center shadow-[0_10px_24px_rgba(24,56,38,0.055)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(24,56,38,0.08)] sm:rounded-[16px] sm:px-4 sm:py-4 md:px-5 md:py-5","children":[["$","div",null,{"className":"mx-auto flex h-6 w-6 items-center justify-center rounded-[7px] border border-[#C9DCC5] bg-[#EEF6EA] text-[#1F5D34] sm:h-9 sm:w-9 sm:rounded-[10px]","children":["$","$L1e",null,{"ref":"$undefined","iconNode":[["path",{"d":"M18 21a8 8 0 0 0-16 0","key":"3ypg7q"}],["circle",{"cx":"10","cy":"8","r":"5","key":"o932ke"}],["path",{"d":"M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3","key":"10s06x"}]],"className":"lucide-users-round h-3.5 w-3.5 sm:h-5 sm:w-5","strokeWidth":1.75}]}],["$","p",null,{"className":"button-text mt-1.5 text-[8.5px] leading-none text-[#183826]/82 sm:mt-2.5 sm:text-[12px] md:text-[13px]","children":"制作発送"}],"$L22","$undefined"]}],"$L23"]}]}]
+f:["$","section",null,{"className":"px-4 py-6 sm:px-7 sm:py-8 md:px-0","children":["$","div",null,{"className":"mx-auto max-w-[806px]","children":[["$","div",null,{"className":"mb-4 sm:mb-5","children":[["$","p",null,{"className":"button-text text-[12px] leading-none text-[#B8A15A]","children":"BENEFIT"}],["$","h2",null,{"className":"section-title mt-2 text-[22px] leading-[1.45] text-[#183826] md:text-[30px]","children":["初期負担を抑えて、",["$","br",null,{}],"事業立ち上げを進めやすい。"]}],["$","p",null,{"className":"body-text mt-2 max-w-[560px] text-[12.5px] leading-[1.8] text-[#183826]/75 sm:mt-3 sm:text-[14px] sm:leading-[1.9]","children":["在庫・専用設備・制作発送の実務を洋サポ側で持つため、",["$","br",null,{"className":"hidden sm:block"}],"準備負担を抑えながら、オリシャン事業を始められます。"]}]]}],["$","div",null,{"className":"grid grid-cols-3 gap-2 sm:gap-3","children":[["$","article","在庫を抱えずに始められる",{"className":"rounded-[9px] border border-[#C9DCC5]/75 bg-white px-2.5 py-3 shadow-[0_10px_24px_rgba(24,56,38,0.04)] sm:rounded-[12px] sm:px-5 sm:py-5","children":[["$","div",null,{"className":"flex items-center justify-center gap-1.5 sm:justify-start sm:gap-3","children":[["$","span",null,{"className":"button-text rounded-full bg-[#EEF6EA] px-2 py-1 text-[10px] leading-none text-[#1F5D34] sm:px-3 sm:text-[12px]","children":"在庫体制"}],["$","$L1e",null,{"ref":"$undefined","iconNode":"$e:props:children:props:children:0:props:children:0:props:children:props:iconNode","className":"lucide-package-open h-4 w-4 text-[#B8A15A] sm:h-5 sm:w-5","strokeWidth":1.8}]]}],["$","h3",null,{"className":"button-text mt-2 text-center text-[11px] leading-[1.45] text-[#183826] sm:mt-4 sm:text-left sm:text-[18px] sm:leading-[1.55]","children":"在庫を抱えずに始められる"}],["$","p",null,{"className":"mt-1.5 text-center text-[8.5px] font-normal leading-[1.55] tracking-[0.01em] text-[#183826]/72 sm:mt-2 sm:text-left sm:text-[13px] sm:leading-[1.85]","children":"必要なボトルを自社で大量に抱える必要はありません。"}]]}],["$","article","設備投資なしで提案できる",{"className":"rounded-[9px] border border-[#C9DCC5]/75 bg-white px-2.5 py-3 shadow-[0_10px_24px_rgba(24,56,38,0.04)] sm:rounded-[12px] sm:px-5 sm:py-5","children":[["$","div",null,{"className":"flex items-center justify-center gap-1.5 sm:justify-start sm:gap-3","children":[["$","span",null,{"className":"button-text rounded-full bg-[#EEF6EA] px-2 py-1 text-[10px] leading-none text-[#1F5D34] sm:px-3 sm:text-[12px]","children":"専用設備"}],["$","$L1e",null,{"ref":"$undefined","iconNode":"$e:props:children:props:children:1:props:children:0:props:children:props:iconNode","className":"lucide-shield-check h-4 w-4 text-[#B8A15A] sm:h-5 sm:w-5","strokeWidth":1.8}]]}],["$","h3",null,{"className":"button-text mt-2 text-center text-[11px] leading-[1.45] text-[#183826] sm:mt-4 sm:text-left sm:text-[18px] sm:leading-[1.55]","children":"設備投資なしで提案できる"}],["$","p",null,{"className":"mt-1.5 text-center text-[8.5px] font-normal leading-[1.55] tracking-[0.01em] text-[#183826]/72 sm:mt-2 sm:text-left sm:text-[13px] sm:leading-[1.85]","children":"印刷機・制作環境を用意せずにスタートできます。"}]]}],["$","article","制作から発送まで任せられる",{"className":"rounded-[9px] border border-[#C9DCC5]/75 bg-white px-2.5 py-3 shadow-[0_10px_24px_rgba(24,56,38,0.04)] sm:rounded-[12px] sm:px-5 sm:py-5","children":[["$","div",null,{"className":"flex items-center justify-center gap-1.5 sm:justify-start sm:gap-3","children":[["$","span",null,{"className":"button-text rounded-full bg-[#EEF6EA] px-2 py-1 text-[10px] leading-none text-[#1F5D34] sm:px-3 sm:text-[12px]","children":"制作運用"}],["$","$L1e",null,{"ref":"$undefined","iconNode":[["path",{"d":"M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2","key":"wrbu53"}],["path",{"d":"M15 18H9","key":"1lyqi6"}],["path",{"d":"M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14","key":"lysw3i"}],["circle",{"cx":"17","cy":"18","r":"2","key":"332jqn"}],["circle",{"cx":"7","cy":"18","r":"2","key":"19iecd"}]],"className":"lucide-truck h-4 w-4 text-[#B8A15A] sm:h-5 sm:w-5","strokeWidth":1.8}]]}],["$","h3",null,{"className":"button-text mt-2 text-center text-[11px] leading-[1.45] text-[#183826] sm:mt-4 sm:text-left sm:text-[18px] sm:leading-[1.55]","children":"制作から発送まで任せられる"}],"$L24"]}]]}]]}]}]
+10:["$","section",null,{"id":"steps","className":"px-3 py-0 sm:px-6 md:px-0","children":["$","div",null,{"className":"mx-auto max-w-[820px] rounded-[16px] border border-[#C9DCC5]/70 bg-[#EEF6EA] bg-cover bg-center px-3 py-5 shadow-[0_18px_50px_rgba(24,56,38,0.04)] sm:px-7 sm:py-6","style":{"backgroundImage":"url(/assets/section-card-background-pale-green.png)"},"children":[["$","div",null,{"className":"mb-6 flex items-center justify-center gap-8 text-center","children":[["$","span",null,{"className":"hidden h-px w-12 bg-[#9DBD99] sm:block"}],["$","h2",null,{"className":"section-title text-[22px] text-[#183826] md:text-[25px]","children":"洋サポと進める3ステップ"}],["$","span",null,{"className":"hidden h-px w-12 bg-[#9DBD99] sm:block"}]]}],["$","div",null,{"className":"grid grid-cols-3 gap-2 sm:gap-5 md:gap-12","children":[["$","div","01",{"className":"relative rounded-[8px] border border-[#C9DCC5] bg-white/95 px-2 pb-3 pt-5 transition duration-300 hover:-translate-y-1 sm:rounded-[9px] sm:px-4 sm:pb-5 sm:pt-7 md:px-5 md:pb-6","children":[["$","span",null,{"className":"number-text absolute -left-1.5 -top-2 flex h-7 w-7 items-center justify-center rounded-full bg-[#1F5D34] text-[11px] text-white shadow-[0_8px_20px_rgba(31,93,52,0.16)] sm:-left-3 sm:-top-3 sm:h-10 sm:w-10 sm:text-[15px] md:h-11 md:w-11 md:text-[17px]","children":"01"}],["$","$L1e",null,{"ref":"$undefined","iconNode":[["path",{"d":"M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z","key":"1pdavp"}],["path",{"d":"M20.054 15.987H3.946","key":"14rxg9"}]],"className":"lucide-laptop mx-auto h-8 w-8 text-[#1F5D34] sm:h-11 sm:w-11 md:h-[52px] md:w-[52px]","strokeWidth":1.6}],["$","h3",null,{"className":"button-text mt-3 text-center text-[10px] leading-[1.45] text-[#183826] sm:mt-5 sm:text-[16px] md:text-[19px]","children":"オンラインで契約"}],["$","p",null,{"className":"mx-auto mt-2 max-w-[92px] text-center text-[8.5px] font-normal leading-[1.65] tracking-[0.01em] text-[#183826]/85 sm:mt-3 sm:max-w-[170px] sm:text-[12px] md:max-w-[190px] md:text-[13px]","children":"フォームからお申し込み、オンラインで開始"}],["$","$L1e",null,{"ref":"$undefined","iconNode":[["path",{"d":"M5 12h14","key":"1ays0h"}],["path",{"d":"m12 5 7 7-7 7","key":"xquz4c"}]],"className":"lucide-arrow-right absolute right-[-32px] top-1/2 z-10 hidden h-9 w-9 -translate-y-1/2 text-[#1F5D34] md:block","strokeWidth":1.7}]]}],["$","div","02",{"className":"relative rounded-[8px] border border-[#C9DCC5] bg-white/95 px-2 pb-3 pt-5 transition duration-300 hover:-translate-y-1 sm:rounded-[9px] sm:px-4 sm:pb-5 sm:pt-7 md:px-5 md:pb-6","children":[["$","span",null,{"className":"number-text absolute -left-1.5 -top-2 flex h-7 w-7 items-center justify-center rounded-full bg-[#1F5D34] text-[11px] text-white shadow-[0_8px_20px_rgba(31,93,52,0.16)] sm:-left-3 sm:-top-3 sm:h-10 sm:w-10 sm:text-[15px] md:h-11 md:w-11 md:text-[17px]","children":"02"}],["$","$L1e",null,{"ref":"$undefined","iconNode":[["path",{"d":"M9 17H7A5 5 0 0 1 7 7h2","key":"8i5ue5"}],["path",{"d":"M15 7h2a5 5 0 1 1 0 10h-2","key":"1b9ql8"}],["line",{"x1":"8","x2":"16","y1":"12","y2":"12","key":"1jonct"}]],"className":"lucide-link2 lucide-link-2 mx-auto h-8 w-8 text-[#1F5D34] sm:h-11 sm:w-11 md:h-[52px] md:w-[52px]","strokeWidth":1.6}],["$","h3",null,{"className":"button-text mt-3 text-center text-[10px] leading-[1.45] text-[#183826] sm:mt-5 sm:text-[16px] md:text-[19px]","children":"仕組みを受け取る"}],["$","p",null,{"className":"mx-auto mt-2 max-w-[92px] text-center text-[8.5px] font-normal leading-[1.65] tracking-[0.01em] text-[#183826]/85 sm:mt-3 sm:max-w-[170px] sm:text-[12px] md:max-w-[190px] md:text-[13px]","children":"専用ページや注文導線を整え、運用準備へ"}],["$","$L1e",null,{"ref":"$undefined","iconNode":"$10:props:children:props:children:1:props:children:0:props:children:4:props:iconNode","className":"lucide-arrow-right absolute right-[-32px] top-1/2 z-10 hidden h-9 w-9 -translate-y-1/2 text-[#1F5D34] md:block","strokeWidth":1.7}]]}],"$L25"]}]]}]}]
+11:["$","section",null,{"className":"px-2 py-8 sm:px-8 md:px-0","children":["$","div",null,{"className":"mx-auto max-w-[840px]","children":[["$","div",null,{"className":"mb-7 text-center","children":[["$","div",null,{"className":"mb-2 flex items-center justify-center gap-5","children":[["$","span",null,{"className":"hidden h-px w-12 bg-[#B8A15A] sm:block"}],["$","p",null,{"className":"button-text whitespace-nowrap text-[12px] leading-[1.7] text-[#B8A15A] sm:text-[16px] md:text-[20px]","children":"多くの店舗・事業者様にご利用いただいています"}],["$","span",null,{"className":"hidden h-px w-12 bg-[#B8A15A] sm:block"}]]}],["$","div",null,{"className":"mb-1 flex items-center justify-center gap-3","children":[["$","span",null,{"className":"h-1.5 w-1.5 rotate-45 bg-[#B8A15A]"}],["$","span",null,{"className":"h-1.5 w-1.5 rotate-45 bg-[#B8A15A]"}],["$","span",null,{"className":"h-1.5 w-1.5 rotate-45 bg-[#B8A15A]"}]]}],["$","h2",null,{"className":"hero-title whitespace-nowrap text-[23px] leading-[1.16] text-[#1F5D34] sm:text-[38px] md:text-[56px]","children":"こんな方に選ばれています"}],["$","span",null,{"className":"mx-auto mt-2 block h-2 w-24 rounded-[50%] border-t-[3px] border-[#B8A15A]"}]]}],["$","div",null,{"className":"grid grid-cols-4 gap-1.5 sm:gap-5","children":[["$","article","01",{"className":"group overflow-hidden rounded-[8px] border border-[#D9C991]/70 bg-white shadow-[0_8px_18px_rgba(24,56,38,0.08)] transition duration-300 hover:-translate-y-1 sm:rounded-[18px] sm:shadow-[0_14px_30px_rgba(24,56,38,0.08)]","children":[["$","div",null,{"className":"relative aspect-[354/425] overflow-hidden bg-[#EEF6EA]","children":[["$","img",null,{"src":"/assets/audience-c-01.png","alt":"","className":"h-full w-full object-cover"}],["$","span",null,{"className":"audience-card-number absolute left-[3%] top-[2.5%] z-20 flex aspect-square w-[20%] items-center justify-center rounded-full border border-[#B8A15A] bg-white font-semibold leading-none text-[#1F5D34] shadow-[0_8px_18px_rgba(184,161,90,0.08)]","children":"01"}]]}],["$","div",null,{"className":"audience-card-body relative pt-0 text-center","children":[["$","div",null,{"className":"audience-card-icon relative z-20 mx-auto flex items-center justify-center rounded-full bg-[#0E6039] ring-2 ring-white sm:ring-4","children":["$","$L1e",null,{"ref":"$undefined","iconNode":[["path",{"d":"M8 22h8","key":"rmew8v"}],["path",{"d":"M12 11v11","key":"ur9y6a"}],["path",{"d":"m19 3-7 8-7-8Z","key":"1sgpiw"}]],"className":"lucide-martini text-[#D2B75C]","strokeWidth":1.7}]}],["$","h3",null,{"className":"audience-card-title mx-auto max-w-[270px] text-[#1F5D34]","children":[["$","span","飲食店・バーの",{"className":"block whitespace-nowrap","children":"飲食店・バーの"}],["$","span","新規展開に",{"className":"block whitespace-nowrap","children":"新規展開に"}]]}],["$","div",null,{"className":"audience-divider relative mx-auto h-px w-[86%] bg-[#D2B75C]/70","children":["$","span",null,{"className":"audience-divider-dot absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-[#B8A15A]"}]}],["$","p",null,{"className":"audience-card-description body-text mx-auto max-w-[260px] text-[#183826]","children":"オリジナルシャンパンでお店の価値を高める"}]]}]]}],["$","article","02",{"className":"group overflow-hidden rounded-[8px] border border-[#D9C991]/70 bg-white shadow-[0_8px_18px_rgba(24,56,38,0.08)] transition duration-300 hover:-translate-y-1 sm:rounded-[18px] sm:shadow-[0_14px_30px_rgba(24,56,38,0.08)]","children":[["$","div",null,{"className":"relative aspect-[354/425] overflow-hidden bg-[#EEF6EA]","children":[["$","img",null,{"src":"/assets/audience-c-02.png","alt":"","className":"h-full w-full object-cover"}],["$","span",null,{"className":"audience-card-number absolute left-[3%] top-[2.5%] z-20 flex aspect-square w-[20%] items-center justify-center rounded-full border border-[#B8A15A] bg-white font-semibold leading-none text-[#1F5D34] shadow-[0_8px_18px_rgba(184,161,90,0.08)]","children":"02"}]]}],"$L26"]}],"$L27","$L28"]}],"$L29"]}]}]
+12:["$","section",null,{"className":"px-5 pb-4 pt-0 sm:px-7 md:px-0","children":["$","div",null,{"className":"mx-auto max-w-[806px] rounded-[14px] border border-[#C9DCC5]/70 bg-[#EEF6EA] bg-cover bg-center px-5 py-5 shadow-[0_14px_34px_rgba(24,56,38,0.035)] sm:px-7","style":{"backgroundImage":"url(/assets/section-card-background-pale-green.png)"},"children":[["$","div",null,{"className":"grid items-center gap-4 md:grid-cols-[0.8fr_1.2fr_auto]","children":[["$","div",null,{"className":"text-center md:text-left","children":[["$","p",null,{"className":"button-text text-[11px] leading-none text-[#B8A15A]","children":"PRICE"}],["$","h2",null,{"className":"section-title mt-2 text-[20px] leading-[1.45] text-[#183826] md:text-[24px]","children":["店舗を持たずに、",["$","br",null,{}],"月額10万円から導入可能"]}]]}],["$","p",null,{"className":"body-text text-center text-[13px] leading-[1.85] text-[#183826]/76 md:text-left md:text-[14px]","children":"洋サポの在庫・酒販・制作体制を使って、オリシャン事業をスタート。運用内容や対応範囲は、事業規模に合わせてご提案します。"}],["$","a",null,{"href":"https://lin.ee/P4whNSS","target":"_blank","rel":"noopener noreferrer","data-track-event":"price_cta_click","data-track-label":"line_consultation","className":"button-text inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[10px] bg-[#1F5D34] px-5 text-[14px] leading-none text-white shadow-[0_12px_24px_rgba(31,93,52,0.2)] transition duration-300 hover:-translate-y-0.5","children":["料金と仕組みを相談する",["$","$L1e",null,{"ref":"$undefined","iconNode":"$10:props:children:props:children:1:props:children:0:props:children:4:props:iconNode","className":"lucide-arrow-right h-4 w-4","strokeWidth":1.9}]]}]]}],["$","p",null,{"className":"body-text mt-3 text-center text-[10px] leading-[1.5] text-[#183826]/58 md:text-left","children":"※表示価格は税抜です。詳細な対応範囲はご相談内容に合わせてご案内します。"}]]}]}]
+13:["$","section",null,{"className":"px-5 pb-5 pt-0 sm:px-7 md:px-0","children":["$","div",null,{"className":"mx-auto max-w-[806px] rounded-[14px] border border-[#C9DCC5]/70 bg-[#EEF6EA]/70 bg-cover bg-center px-3 py-4 shadow-[0_12px_28px_rgba(24,56,38,0.035)] sm:px-5 sm:py-5","style":{"backgroundImage":"url(/assets/section-card-background-pale-green.png)"},"children":[["$","div",null,{"className":"mb-3 flex items-center gap-3 sm:mb-4","children":[["$","span",null,{"className":"h-px flex-1 bg-[#B8A15A]/55"}],["$","h2",null,{"className":"button-text whitespace-nowrap text-[15px] leading-none text-[#183826] sm:text-[18px]","children":"よくある質問"}],["$","span",null,{"className":"h-px flex-1 bg-[#B8A15A]/55"}]]}],["$","div",null,{"className":"grid gap-2 sm:gap-2.5","children":[["$","article","在庫を持たずに始められますか？",{"className":"relative grid grid-cols-[34px_1fr] gap-2.5 rounded-[10px] border border-[#C9DCC5]/80 bg-white/[0.92] px-3 py-3 shadow-[0_8px_18px_rgba(24,56,38,0.045)] sm:grid-cols-[42px_1fr] sm:gap-3.5 sm:px-4 sm:py-3.5","children":[["$","span",null,{"className":"number-text flex h-7 w-7 items-center justify-center rounded-full border border-[#D9C991]/80 bg-[#FBFCF7] text-[10px] leading-none text-[#B8A15A] sm:h-8 sm:w-8 sm:text-[11px]","children":"01"}],["$","div",null,{"children":[["$","h3",null,{"className":"button-text text-[12px] leading-[1.55] text-[#183826] sm:text-[14px]","children":"在庫を持たずに始められますか？"}],["$","p",null,{"className":"body-text mt-1 text-[10.5px] leading-[1.65] text-[#183826]/68 sm:text-[12px]","children":"はい。洋サポの在庫体制を使うため、事前に大量の在庫を抱える必要はありません。"}]]}]]}],["$","article","デザインや印刷の知識が全くありません。",{"className":"relative grid grid-cols-[34px_1fr] gap-2.5 rounded-[10px] border border-[#C9DCC5]/80 bg-white/[0.92] px-3 py-3 shadow-[0_8px_18px_rgba(24,56,38,0.045)] sm:grid-cols-[42px_1fr] sm:gap-3.5 sm:px-4 sm:py-3.5","children":[["$","span",null,{"className":"number-text flex h-7 w-7 items-center justify-center rounded-full border border-[#D9C991]/80 bg-[#FBFCF7] text-[10px] leading-none text-[#B8A15A] sm:h-8 sm:w-8 sm:text-[11px]","children":"02"}],["$","div",null,{"children":[["$","h3",null,{"className":"button-text text-[12px] leading-[1.55] text-[#183826] sm:text-[14px]","children":"デザインや印刷の知識が全くありません。"}],["$","p",null,{"className":"body-text mt-1 text-[10.5px] leading-[1.65] text-[#183826]/68 sm:text-[12px]","children":"大丈夫です。制作・印刷・発送は洋サポ側で行うため、特別な準備物は不要です。"}]]}]]}],["$","article","お酒の取り扱いも任せられますか？",{"className":"relative grid grid-cols-[34px_1fr] gap-2.5 rounded-[10px] border border-[#C9DCC5]/80 bg-white/[0.92] px-3 py-3 shadow-[0_8px_18px_rgba(24,56,38,0.045)] sm:grid-cols-[42px_1fr] sm:gap-3.5 sm:px-4 sm:py-3.5","children":[["$","span",null,{"className":"number-text flex h-7 w-7 items-center justify-center rounded-full border border-[#D9C991]/80 bg-[#FBFCF7] text-[10px] leading-none text-[#B8A15A] sm:h-8 sm:w-8 sm:text-[11px]","children":"03"}],["$","div",null,{"children":[["$","h3",null,{"className":"button-text text-[12px] leading-[1.55] text-[#183826] sm:text-[14px]","children":"お酒の取り扱いも任せられますか？"}],["$","p",null,{"className":"body-text mt-1 text-[10.5px] leading-[1.65] text-[#183826]/68 sm:text-[12px]","children":"はい。酒販に対応した体制のもと、制作からお届けまで洋サポ側で対応します。"}]]}]]}],["$","article","資材価格や供給状況の影響が心配です。",{"className":"relative grid grid-cols-[34px_1fr] gap-2.5 rounded-[10px] border border-[#C9DCC5]/80 bg-white/[0.92] px-3 py-3 shadow-[0_8px_18px_rgba(24,56,38,0.045)] sm:grid-cols-[42px_1fr] sm:gap-3.5 sm:px-4 sm:py-3.5","children":[["$","span",null,{"className":"number-text flex h-7 w-7 items-center justify-center rounded-full border border-[#D9C991]/80 bg-[#FBFCF7] text-[10px] leading-none text-[#B8A15A] sm:h-8 sm:w-8 sm:text-[11px]","children":"04"}],"$L2a"]}],"$L2b"]}]]}]}]
+14:["$","section",null,{"id":"cta","className":"px-5 pb-0 pt-2 sm:px-7 md:px-0","children":["$","div",null,{"className":"relative mx-auto max-w-[806px] overflow-hidden rounded-[14px] bg-[#1F5D34] px-5 py-6 text-center text-white shadow-[0_16px_36px_rgba(24,56,38,0.14)] sm:px-8 sm:py-7","children":[["$","span",null,{"className":"mx-auto mb-3 block h-px w-14 bg-[#B8A15A]"}],["$","h2",null,{"className":"section-title mx-auto max-w-[350px] text-[24px] text-white md:max-w-none md:text-[29px]","children":"公式LINEで無料相談"}],["$","p",null,{"className":"body-text mx-auto mt-1 max-w-[520px] text-[13px] leading-[1.8] text-[#EEF6EA] md:text-[15px]","children":["洋サポと組んで始める導入方法を、",["$","br",null,{}],["$","span",null,{"className":"whitespace-nowrap","children":"事業内容に合わせてご案内します。"}]]}],["$","div",null,{"className":"mx-auto mt-5 grid max-w-[660px] gap-2 sm:grid-cols-2","children":[["$","a","公式LINEで無料相談",{"href":"https://lin.ee/P4whNSS","target":"_blank","rel":"noopener noreferrer","data-track-event":"cta_click","data-track-label":"line_consultation","className":"button-text inline-flex min-h-[50px] items-center justify-center gap-2.5 rounded-[9px] border px-4 py-2.5 text-[14px] leading-[1.35] text-[#1F5D34] shadow-[0_8px_18px_rgba(6,28,15,0.12)] transition duration-300 hover:-translate-y-0.5 md:text-[15px] border-[#EEF6EA] bg-[#EEF6EA]","children":[["$","$L1e",null,{"ref":"$undefined","iconNode":"$d:props:children:1:props:children:1:props:children:4:props:children:0:props:children:0:props:iconNode","className":"lucide-message-circle h-5 w-5 shrink-0","strokeWidth":1.8}],["$","span",null,{"children":"公式LINEで無料相談"}]]}],["$","a","オンライン相談を予約",{"href":"https://cal.com/ayaka-miura-m7jftn/洋サホ-lpオンラインこ相談c","target":"_blank","rel":"noopener noreferrer","data-track-event":"cta_click","data-track-label":"consultation","className":"button-text inline-flex min-h-[50px] items-center justify-center gap-2.5 rounded-[9px] border px-4 py-2.5 text-[14px] leading-[1.35] text-[#1F5D34] shadow-[0_8px_18px_rgba(6,28,15,0.12)] transition duration-300 hover:-translate-y-0.5 md:text-[15px] border-[#EEF6EA] bg-[#FBFCF7]","children":[["$","$L1e",null,{"ref":"$undefined","iconNode":[["path",{"d":"M8 2v4","key":"1cmpym"}],["path",{"d":"M16 2v4","key":"4m81vk"}],["rect",{"width":"18","height":"18","x":"3","y":"4","rx":"2","key":"1hopcy"}],["path",{"d":"M3 10h18","key":"8toen8"}],["path",{"d":"M8 14h.01","key":"6423bh"}],["path",{"d":"M12 14h.01","key":"1etili"}],["path",{"d":"M16 14h.01","key":"1gbofw"}],["path",{"d":"M8 18h.01","key":"lrp35t"}],["path",{"d":"M12 18h.01","key":"mhygvu"}],["path",{"d":"M16 18h.01","key":"kzsmim"}]],"className":"lucide-calendar-days h-5 w-5 shrink-0","strokeWidth":1.8}],["$","span",null,{"children":"オンライン相談を予約"}]]}]]}]]}]}]
+15:["$","footer",null,{"className":"bg-[#FBFCF7] px-5 py-5 text-center","children":["$","a",null,{"href":"https://mononopu.com/","target":"_blank","rel":"noopener noreferrer","className":"button-text text-[12px] leading-none text-[#1F5D34]/70 transition duration-300 hover:text-[#1F5D34]","children":"株式会社洋樽本家酒造"}]}]
+16:["$","div",null,{"className":"fixed inset-x-0 bottom-0 z-50 px-3 pb-[calc(10px+env(safe-area-inset-bottom))]","children":["$","div",null,{"className":"mx-auto flex max-w-[820px] items-center gap-2 rounded-[14px] border border-[#C9DCC5]/90 bg-[#FBFCF7]/95 p-2 shadow-[0_14px_38px_rgba(24,56,38,0.18)] backdrop-blur-md","children":[["$","div",null,{"className":"hidden min-w-0 flex-1 px-2 text-left sm:block","children":[["$","p",null,{"className":"button-text text-[12px] leading-[1.5] text-[#1F5D34]","children":"洋サポと組む導入方法を相談"}],["$","p",null,{"className":"body-text text-[11px] leading-[1.5] text-[#183826]/62","children":"在庫・酒販・制作体制を使った始め方をご案内します。"}]]}],["$","div",null,{"className":"grid min-w-0 flex-1 grid-cols-2 gap-2 sm:flex sm:flex-none","children":[["$","a","公式LINEで無料相談",{"href":"https://lin.ee/P4whNSS","target":"_blank","rel":"noopener noreferrer","data-track-event":"floating_cta_click","data-track-label":"line_consultation","className":"button-text inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[10px] px-3 text-[13px] leading-[1.25] transition duration-300 hover:-translate-y-0.5 sm:min-w-[176px] sm:text-[14px] bg-[#1F5D34] text-white shadow-[0_10px_22px_rgba(31,93,52,0.24)]","children":[["$","$L1e",null,{"ref":"$undefined","iconNode":"$d:props:children:1:props:children:1:props:children:4:props:children:0:props:children:0:props:iconNode","className":"lucide-message-circle h-4 w-4 shrink-0","strokeWidth":1.9}],["$","span",null,{"children":"公式LINEで無料相談"}]]}],["$","a","オンライン相談を予約",{"href":"https://cal.com/ayaka-miura-m7jftn/洋サホ-lpオンラインこ相談c","target":"_blank","rel":"noopener noreferrer","data-track-event":"floating_cta_click","data-track-label":"consultation","className":"button-text inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[10px] px-3 text-[13px] leading-[1.25] transition duration-300 hover:-translate-y-0.5 sm:min-w-[176px] sm:text-[14px] border border-[#C9DCC5] bg-white text-[#1F5D34] shadow-[0_8px_18px_rgba(24,56,38,0.08)]","children":[["$","$L1e",null,{"ref":"$undefined","iconNode":"$14:props:children:props:children:3:props:children:1:props:children:0:props:iconNode","className":"lucide-calendar-days h-4 w-4 shrink-0","strokeWidth":1.9}],["$","span",null,{"children":"オンライン相談を予約"}]]}]]}]]}]}]
+17:["$","script","script-0",{"src":"/_next/static/chunks/0gei0d8pq-p_-.js","async":true,"nonce":"$undefined"}]
+18:["$","$L2c",null,{"children":["$","$1c",null,{"name":"Next.MetadataOutlet","children":"$@2d"}]}]
+:HL["/assets/hero-bottles-background.png","image"]
+:HL["/assets/audience-c-03.png","image"]
+:HL["/assets/audience-c-04.png","image"]
+1f:["$","$L1e",null,{"ref":"$undefined","iconNode":"$10:props:children:props:children:1:props:children:0:props:children:4:props:iconNode","className":"lucide-arrow-right h-4 w-4","strokeWidth":1.9}]
+20:["$","p",null,{"className":"body-text mt-3 hidden text-[11px] leading-[1.7] text-[#183826]/58 sm:block","children":"洋サポの体制を使う前提で、導入目的に合わせた進め方をご案内します。"}]
+21:["$","div",null,{"className":"bottle-scene relative z-0 flex min-h-[318px] min-w-0 items-start justify-end overflow-visible pt-3 md:min-h-[500px] md:pt-0","children":["$","img",null,{"src":"/assets/hero-bottles-background.png","alt":"オリジナルシャンパンの白ボトルとグリーンボトル","className":"bottle-photo relative z-0 -mr-8 mt-0 w-[202px] max-w-none object-contain sm:w-[300px] md:z-10 md:mr-[28px] md:w-[394px]"}]}]
+22:["$","p",null,{"className":"button-text mt-1 text-[17px] leading-none text-[#1F5D34] sm:mt-1.5 sm:text-[28px] md:text-[34px]","children":"代行"}]
+23:["$","div","対応本数",{"className":"group relative min-w-0 overflow-hidden rounded-[12px] border border-[#C9DCC5]/85 bg-white/82 px-2 py-2.5 text-center shadow-[0_10px_24px_rgba(24,56,38,0.055)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(24,56,38,0.08)] sm:rounded-[16px] sm:px-4 sm:py-4 md:px-5 md:py-5","children":[["$","div",null,{"className":"mx-auto flex h-6 w-6 items-center justify-center rounded-[7px] border border-[#C9DCC5] bg-[#EEF6EA] text-[#1F5D34] sm:h-9 sm:w-9 sm:rounded-[10px]","children":["$","$L1e",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 6 9 17l-5-5","key":"1gmf2c"}]],"className":"lucide-check h-3.5 w-3.5 sm:h-5 sm:w-5","strokeWidth":1.75}]}],["$","p",null,{"className":"button-text mt-1.5 text-[8.5px] leading-none text-[#183826]/82 sm:mt-2.5 sm:text-[12px] md:text-[13px]","children":"対応本数"}],["$","p",null,{"className":"button-text mt-1 text-[17px] leading-none text-[#1F5D34] sm:mt-1.5 sm:text-[28px] md:text-[34px]","children":"1本〜"}],"$undefined"]}]
+24:["$","p",null,{"className":"mt-1.5 text-center text-[8.5px] font-normal leading-[1.55] tracking-[0.01em] text-[#183826]/72 sm:mt-2 sm:text-left sm:text-[13px] sm:leading-[1.85]","children":"注文後の印刷・加工・発送まで洋サポが対応します。"}]
+25:["$","div","03",{"className":"relative rounded-[8px] border border-[#C9DCC5] bg-white/95 px-2 pb-3 pt-5 transition duration-300 hover:-translate-y-1 sm:rounded-[9px] sm:px-4 sm:pb-5 sm:pt-7 md:px-5 md:pb-6","children":[["$","span",null,{"className":"number-text absolute -left-1.5 -top-2 flex h-7 w-7 items-center justify-center rounded-full bg-[#1F5D34] text-[11px] text-white shadow-[0_8px_20px_rgba(31,93,52,0.16)] sm:-left-3 sm:-top-3 sm:h-10 sm:w-10 sm:text-[15px] md:h-11 md:w-11 md:text-[17px]","children":"03"}],["$","$L1e",null,{"ref":"$undefined","iconNode":"$f:props:children:props:children:1:props:children:2:props:children:0:props:children:1:props:iconNode","className":"lucide-truck mx-auto h-8 w-8 text-[#1F5D34] sm:h-11 sm:w-11 md:h-[52px] md:w-[52px]","strokeWidth":1.6}],["$","h3",null,{"className":"button-text mt-3 text-center text-[10px] leading-[1.45] text-[#183826] sm:mt-5 sm:text-[16px] md:text-[19px]","children":"制作・発送を任せる"}],["$","p",null,{"className":"mx-auto mt-2 max-w-[92px] text-center text-[8.5px] font-normal leading-[1.65] tracking-[0.01em] text-[#183826]/85 sm:mt-3 sm:max-w-[170px] sm:text-[12px] md:max-w-[190px] md:text-[13px]","children":"注文後の制作・印刷・発送まで弊社が対応"}],false]}]
+26:["$","div",null,{"className":"audience-card-body relative pt-0 text-center","children":[["$","div",null,{"className":"audience-card-icon relative z-20 mx-auto flex items-center justify-center rounded-full bg-[#0E6039] ring-2 ring-white sm:ring-4","children":["$","$L1e",null,{"ref":"$undefined","iconNode":[["path",{"d":"M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z","key":"1vdc57"}],["path",{"d":"M5 21h14","key":"11awu3"}]],"className":"lucide-crown text-[#D2B75C]","strokeWidth":1.7}]}],["$","h3",null,{"className":"audience-card-title mx-auto max-w-[270px] text-[#1F5D34]","children":[["$","span","ナイト事業の",{"className":"block whitespace-nowrap","children":"ナイト事業の"}],["$","span","イベントに",{"className":"block whitespace-nowrap","children":"イベントに"}]]}],["$","div",null,{"className":"audience-divider relative mx-auto h-px w-[86%] bg-[#D2B75C]/70","children":["$","span",null,{"className":"audience-divider-dot absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-[#B8A15A]"}]}],["$","p",null,{"className":"audience-card-description body-text mx-auto max-w-[260px] text-[#183826]","children":"バースデーや周年イベントを華やかに演出"}]]}]
+27:["$","article","03",{"className":"group overflow-hidden rounded-[8px] border border-[#D9C991]/70 bg-white shadow-[0_8px_18px_rgba(24,56,38,0.08)] transition duration-300 hover:-translate-y-1 sm:rounded-[18px] sm:shadow-[0_14px_30px_rgba(24,56,38,0.08)]","children":[["$","div",null,{"className":"relative aspect-[354/425] overflow-hidden bg-[#EEF6EA]","children":[["$","img",null,{"src":"/assets/audience-c-03.png","alt":"","className":"h-full w-full object-cover"}],["$","span",null,{"className":"audience-card-number absolute left-[3%] top-[2.5%] z-20 flex aspect-square w-[20%] items-center justify-center rounded-full border border-[#B8A15A] bg-white font-semibold leading-none text-[#1F5D34] shadow-[0_8px_18px_rgba(184,161,90,0.08)]","children":"03"}]]}],["$","div",null,{"className":"audience-card-body relative pt-0 text-center","children":[["$","div",null,{"className":"audience-card-icon relative z-20 mx-auto flex items-center justify-center rounded-full bg-[#0E6039] ring-2 ring-white sm:ring-4","children":["$","$L1e",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 7v14","key":"1akyts"}],["path",{"d":"M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8","key":"1sqzm4"}],["path",{"d":"M7.5 7a1 1 0 0 1 0-5A4.8 8 0 0 1 12 7a4.8 8 0 0 1 4.5-5 1 1 0 0 1 0 5","key":"kc0143"}],["rect",{"x":"3","y":"7","width":"18","height":"4","rx":"1","key":"1hberx"}]],"className":"lucide-gift text-[#D2B75C]","strokeWidth":1.7}]}],["$","h3",null,{"className":"audience-card-title mx-auto max-w-[270px] text-[#1F5D34]","children":[["$","span","ブランド・企業の",{"className":"block whitespace-nowrap","children":"ブランド・企業の"}],["$","span","ノベルティに",{"className":"block whitespace-nowrap","children":"ノベルティに"}]]}],["$","div",null,{"className":"audience-divider relative mx-auto h-px w-[86%] bg-[#D2B75C]/70","children":["$","span",null,{"className":"audience-divider-dot absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-[#B8A15A]"}]}],["$","p",null,{"className":"audience-card-description body-text mx-auto max-w-[260px] text-[#183826]","children":"オリジナルデザインでブランド価値を向上"}]]}]]}]
+28:["$","article","04",{"className":"group overflow-hidden rounded-[8px] border border-[#D9C991]/70 bg-white shadow-[0_8px_18px_rgba(24,56,38,0.08)] transition duration-300 hover:-translate-y-1 sm:rounded-[18px] sm:shadow-[0_14px_30px_rgba(24,56,38,0.08)]","children":[["$","div",null,{"className":"relative aspect-[354/425] overflow-hidden bg-[#EEF6EA]","children":[["$","img",null,{"src":"/assets/audience-c-04.png","alt":"","className":"h-full w-full object-cover"}],["$","span",null,{"className":"audience-card-number absolute left-[3%] top-[2.5%] z-20 flex aspect-square w-[20%] items-center justify-center rounded-full border border-[#B8A15A] bg-white font-semibold leading-none text-[#1F5D34] shadow-[0_8px_18px_rgba(184,161,90,0.08)]","children":"04"}]]}],["$","div",null,{"className":"audience-card-body relative pt-0 text-center","children":[["$","div",null,{"className":"audience-card-icon relative z-20 mx-auto flex items-center justify-center rounded-full bg-[#0E6039] ring-2 ring-white sm:ring-4","children":["$","$L1e",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 16v5","key":"zza2cw"}],["path",{"d":"M16 14.639V21","key":"1s85h0"}],["path",{"d":"M20 10.656V21","key":"q45596"}],["path",{"d":"m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15","key":"1fw8x9"}],["path",{"d":"M4 18.463V21","key":"1otddq"}],["path",{"d":"M8 14.656V21","key":"1t2idw"}]],"className":"lucide-chart-no-axes-combined text-[#D2B75C]","strokeWidth":1.7}]}],["$","h3",null,{"className":"audience-card-title mx-auto max-w-[270px] text-[#1F5D34]","children":[["$","span","サイドビジネス・",{"className":"block whitespace-nowrap","children":"サイドビジネス・"}],["$","span","副業に",{"className":"block whitespace-nowrap","children":"副業に"}]]}],["$","div",null,{"className":"audience-divider relative mx-auto h-px w-[86%] bg-[#D2B75C]/70","children":["$","span",null,{"className":"audience-divider-dot absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-[#B8A15A]"}]}],["$","p",null,{"className":"audience-card-description body-text mx-auto max-w-[260px] text-[#183826]","children":"設備ゼロ・在庫ゼロで手軽に始められる"}]]}]]}]
+29:["$","p",null,{"className":"body-text mt-5 text-center text-[12px] leading-[1.7] text-[#183826]/60 md:text-[13px]","children":"※業種や規模を問わず、1本からオリジナルシャンパンを制作いただけます。"}]
+2a:["$","div",null,{"children":[["$","h3",null,{"className":"button-text text-[12px] leading-[1.55] text-[#183826] sm:text-[14px]","children":"資材価格や供給状況の影響が心配です。"}],["$","p",null,{"className":"body-text mt-1 text-[10.5px] leading-[1.65] text-[#183826]/68 sm:text-[12px]","children":"サプライヤーと年間契約を結び、常時半年分ほどの在庫を確保。年間50万本出荷を想定した体制です。"}]]}]
+2b:["$","article","導入後は受注だけで大丈夫ですか？",{"className":"relative grid grid-cols-[34px_1fr] gap-2.5 rounded-[10px] border border-[#C9DCC5]/80 bg-white/[0.92] px-3 py-3 shadow-[0_8px_18px_rgba(24,56,38,0.045)] sm:grid-cols-[42px_1fr] sm:gap-3.5 sm:px-4 sm:py-3.5","children":[["$","span",null,{"className":"number-text flex h-7 w-7 items-center justify-center rounded-full border border-[#D9C991]/80 bg-[#FBFCF7] text-[10px] leading-none text-[#B8A15A] sm:h-8 sm:w-8 sm:text-[11px]","children":"05"}],["$","div",null,{"children":[["$","h3",null,{"className":"button-text text-[12px] leading-[1.55] text-[#183826] sm:text-[14px]","children":"導入後は受注だけで大丈夫ですか？"}],["$","p",null,{"className":"body-text mt-1 text-[10.5px] leading-[1.65] text-[#183826]/68 sm:text-[12px]","children":"はい。受注後のボトル準備・印刷・発送は洋サポ側で行うため、専用設備や制作作業は不要です。"}]]}]]}]
+1a:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1d:[["$","title","0",{"children":"洋サポ | オリシャン事業導入サービス"}],["$","meta","1",{"name":"description","content":"在庫を持たず、制作・印刷・発送を任せてスムーズに始められるオリシャン事業導入サービスのLP"}]]
+2d:null
